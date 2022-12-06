@@ -70,6 +70,16 @@ Vector2 Vector2::getNorm(){
     auto R = getR();
     return Vector2(x = x/R, y = y/R);
 }
+Vector2 Vector2::changePhi(float a){
+    auto Phi = getA();
+    auto R = getR();
+    return Vector2(x = R,y = Phi*a );
+}
+Vector2 Vector2::changeR(float a){
+    auto Phi = getA();
+    auto R = getR();
+    return Vector2(x = R*a,y = Phi );
+}
 
 
 

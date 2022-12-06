@@ -24,6 +24,8 @@ public:
     double getA();
     Vector2 getPSK();
     Vector2 getNorm();
+    Vector2 changePhi(float a);
+    Vector2 changeR(float a);
 
     Vector2 operator+(const Vector2& vector) const;
     Vector2 operator-(const Vector2& vector) const;
